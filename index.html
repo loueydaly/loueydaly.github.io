@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Louey Daly — Embedded Systems & Robotics Engineering Student. STM32, C/C++, FreeRTOS, robotics, control systems and IoT projects.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Louey Daly | Embedded Systems & Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span>LD</span> Louey Daly</a>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> EMBEDDED SYSTEMS · ROBOTICS · CONTROL</div>
+          <h1>Building systems<br><em>that move & measure.</em></h1>
+          <p class="hero-copy">
+            I'm <strong>Louey Daly</strong>, an engineering student at INSAT focused on
+            embedded systems, robotics and real-time control. I turn sensors, microcontrollers
+            and algorithms into working systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore my work <span>↓</span></a>
+            <a class="btn ghost" href="https://github.com/loueydaly" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Tunis, Tunisia</span>
+            <span>🎓 INSAT</span>
+            <span>⚡ Open to embedded / robotics opportunities</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Embedded systems visual">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="core">
+            <span class="core-label">STM32</span>
+            <div class="pin p1"></div><div class="pin p2"></div><div class="pin p3"></div><div class="pin p4"></div>
+          </div>
+          <div class="signal s1">CAN</div>
+          <div class="signal s2">I²C</div>
+          <div class="signal s3">PWM</div>
+          <div class="signal s4">RTOS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-head">
+        <span class="section-number">01</span>
+        <div><p class="kicker">PROFILE</p><h2>Engineering with a<br><span>hardware-first mindset.</span></h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I’m an <strong>Embedded Systems & Robotics Engineering Student</strong> at INSAT,
+            with hands-on experience designing firmware, integrating sensors and actuators,
+            implementing control algorithms, and connecting embedded platforms to higher-level software.
+          </p>
+          <p>
+            My projects span STM32 firmware, FreeRTOS, CAN, UART, I²C, PWM, encoder-based odometry,
+            robust control, signal processing and micro-ROS. I also work on robotics through
+            <strong>Aerobotix INSAT</strong> and Eurobot.
+          </p>
+          <div class="quote">“From the sensor reading to the physical motion — understand every layer.”</div>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>Focus</b><span>Embedded systems<br>Robotics & control</span></div>
+          <div class="fact"><b>Platforms</b><span>STM32 · ESP32<br>Arduino</span></div>
+          <div class="fact"><b>Core languages</b><span>C · C++ · Python<br>Java</span></div>
+          <div class="fact"><b>Engineering</b><span>FreeRTOS · CAN<br>UART · I²C · PWM</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-head">
+        <span class="section-number">02</span>
+        <div><p class="kicker">SELECTED WORK</p><h2>Systems I've <span>built.</span></h2></div>
+      </div>
+
+      <div class="project-feature">
+        <div class="project-visual energy">
+          <div class="terminal">
+            <div class="terminal-top"><i></i><i></i><i></i><span>energy-monitor</span></div>
+            <pre><span class="muted">STM32F446RE</span>
+  ↓ V / I samples
+┌─────────────────────┐
+│   FreeRTOS          │
+│   ProcessingTask    │
+│   RMS / P / PF / THD│
+└──────────┬──────────┘
+           │ CAN 500 kbps
+           ▼
+      <span class="accent">ESP32 bridge</span>
+           │ UART
+           ▼
+      LabVIEW HMI</pre>
+          </div>
+        </div>
+        <div class="project-content">
+          <span class="project-index">01 / FEATURED</span>
+          <h3>Embedded Energy<br>Health Monitor</h3>
+          <p>Real-time AC power-quality monitoring architecture combining STM32 firmware, FreeRTOS, CAN communication, an ESP32 bridge and a LabVIEW simulation/HMI.</p>
+          <div class="tags"><span>STM32F446RE</span><span>FreeRTOS</span><span>CAN</span><span>ESP32</span><span>LabVIEW</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/energy-health-monitor" target="_blank" rel="noreferrer">View repository ↗</a>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="card">
+          <div class="card-top"><span class="number">02</span><span class="lang">C</span></div>
+          <div class="icon">◉</div>
+          <h3>Ball & Beam Control</h3>
+          <p>STM32F446RE control system using a VL53L0X ToF sensor, sliding-mode control and adaptive SMC, with UART telemetry and Python real-time plotting.</p>
+          <div class="tags"><span>STM32</span><span>SMC</span><span>VL53L0X</span><span>Python</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/ball-and-beam-system" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="number">03</span><span class="lang">C</span></div>
+          <div class="icon">⌁</div>
+          <h3>PAMI Autonomous Robot</h3>
+          <p>Eurobot 2025 embedded firmware for an STM32F103C8TX: four-channel motor PWM, quadrature encoders, odometry, PI wheel regulation and autonomous navigation.</p>
+          <div class="tags"><span>STM32F103</span><span>Odometry</span><span>PWM</span><span>Eurobot</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/robot-autonome-Pami-eurobot2025" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="number">04</span><span class="lang">C</span></div>
+          <div class="icon">△</div>
+          <h3>Capacitance Measurement</h3>
+          <p>RC timing measurement on STM32G474RE using PWM excitation, comparator threshold detection, DAC reference and timer input capture.</p>
+          <div class="tags"><span>STM32G4</span><span>Timers</span><span>COMP</span><span>DAC</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/Capacitance-Measurement-System-on-STM32G474RE" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="number">05</span><span class="lang">C</span></div>
+          <div class="icon">≈</div>
+          <h3>Real-Time IIR Filter</h3>
+          <p>Fourth-order Butterworth low-pass filter on STM32H743ZI using two cascaded biquads, with cycle-level performance benchmarking.</p>
+          <div class="metric"><strong>7,066</strong><span>measured cycles / sample</span></div>
+          <div class="tags"><span>STM32H7</span><span>DSP</span><span>DF2T</span><span>Benchmarking</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/IIR-Filter" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="number">06</span><span class="lang">C / ROS 2</span></div>
+          <div class="icon">↔</div>
+          <h3>micro-ROS DHT11</h3>
+          <p>STM32 microcontroller project exploring sensor publishing and LED command subscription through a micro-ROS / ROS 2 workflow.</p>
+          <div class="tags"><span>STM32F401</span><span>micro-ROS</span><span>ROS 2</span><span>DHT11</span></div>
+          <a class="text-link" href="https://github.com/loueydaly/micro_ros_DHT11" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </article>
+      </div>
+
+      <div class="all-repos">
+        <a class="btn ghost" href="https://github.com/loueydaly?tab=repositories" target="_blank" rel="noreferrer">Browse all GitHub repositories ↗</a>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-head">
+        <span class="section-number">03</span>
+        <div><p class="kicker">TOOLBOX</p><h2>What I work <span>with.</span></h2></div>
+      </div>
+      <div class="skill-layout">
+        <div class="skill-group"><h3>Embedded</h3><div class="skill-list"><span>STM32</span><span>ESP32</span><span>FreeRTOS</span><span>STM32CubeIDE</span><span>HAL / CMSIS</span><span>Arduino</span></div></div>
+        <div class="skill-group"><h3>Interfaces</h3><div class="skill-list"><span>CAN / TWAI</span><span>UART</span><span>I²C</span><span>PWM</span><span>Timers</span><span>Encoders</span><span>MQTT</span></div></div>
+        <div class="skill-group"><h3>Programming</h3><div class="skill-list"><span>C</span><span>C++</span><span>Python</span><span>Java</span><span>Git</span><span>GitHub</span></div></div>
+        <div class="skill-group"><h3>Robotics & Control</h3><div class="skill-list"><span>PID</span><span>Sliding Mode Control</span><span>Adaptive SMC</span><span>Odometry</span><span>Navigation</span><span>Sensor Fusion</span></div></div>
+        <div class="skill-group"><h3>Engineering Tools</h3><div class="skill-list"><span>LabVIEW</span><span>KiCad</span><span>Proteus</span><span>SolidWorks</span><span>MATLAB</span><span>STM Studio</span></div></div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-head">
+        <span class="section-number">04</span>
+        <div><p class="kicker">EXPERIENCE</p><h2>Learning by <span>building.</span></h2></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">2026</div>
+          <div><span class="role">Robotics Trainer & Team Member</span><strong>Aerobotix INSAT</strong><p>Mentoring robotics teams and contributing to Eurobot activities, with a focus on embedded control, autonomous navigation and practical robotics engineering.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2025–26</div>
+          <div><span class="role">Embedded Systems Engineering</span><strong>Academic & Personal Projects</strong><p>Developing STM32-based systems covering real-time software, signal processing, control systems, sensor interfaces, communication buses and embedded measurement.</p></div>
+        </div>
+        <div class="timeline-item">
+          <div class="time">2025</div>
+          <div><span class="role">Embedded / IoT Projects</span><strong>Smartwatch & OfficeBot</strong><p>Worked across ESP32/STM32 platforms, sensor integration, MQTT communication and robotics-oriented embedded software.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education">
+      <div class="edu-card">
+        <div class="edu-mark">INSAT</div>
+        <div><p class="kicker">EDUCATION</p><h2>Institut National des Sciences Appliquées et de Technologie</h2><p>Engineering studies · Industrial Computing & Automation · Embedded Systems</p></div>
+        <span class="edu-badge">Tunis, Tunisia</span>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-box">
+        <p class="kicker">LET'S CONNECT</p>
+        <h2>Have an embedded<br><em>problem to solve?</em></h2>
+        <p>I'm interested in internships and engineering opportunities involving embedded software, robotics, real-time systems and connected devices.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://github.com/loueydaly" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="btn ghost" href="mailto:loueydaly@gmail.com">Email me ↗</a>
+        </div>
+        <small>Replace the email above with your preferred professional address before publishing.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Louey Daly</span>
+    <span>Embedded Systems · Robotics · Control</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
